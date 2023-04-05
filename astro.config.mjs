@@ -7,18 +7,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), image(), mdx({
-    syntaxHighlight: "shiki",
-    shikiConfig: {
-      theme: "dracula"
-    },
-    remarkPlugins: [remarkToc],
-    rehypePlugins: [rehypeMinifyHtml],
-    remarkRehype: {
-      footnoteLabel: "Footnotes"
-    },
-    gfm: false
-  })],
+  integrations: [react(), image(), mdx()],
   output: "server",
   adapter: vercel()
 });
