@@ -1,0 +1,77 @@
+---
+import styles from "../styles/comp-styles/navbar.module.scss";
+---
+
+<div class={styles.Navbar_Wrapper}>
+  <nav class={styles.Navbar}>
+    <div class={styles.leftSide}>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" d="M5 20h14v2H5v-2M17 2v3h-2V2h-2v3h-2V2H9v3H7V2H5v6h2v10h10V8h2V2h-2Z"/></svg>
+    </div>
+
+    <div class={styles.RightSide}>
+      <ul class={styles.Navlink_Container}>
+        <li>
+          <a href="/" class={styles.Navlink}>Home</a>
+        </li>
+        <li>
+          <a href="about" class={styles.Navlink}>About</a>
+        </li>
+        <li>
+          <a href="contact" class={styles.Navlink}>Contact</a>
+        </li>
+      </ul>
+
+      <!-- <span
+      class={`${styles.MenuIcon} ${
+        clicked ? styles.MenuIcon_Clicked : ""
+      }`}
+    >
+      <MenuIcon sx={{ color: "white", fontSize: 30 }} />
+      <ul
+        class={`${styles.Menu} ${reveal ? styles.Reveal : ""}`}
+      >
+        <li>
+          <a
+            class={styles.Menu_NavLink}
+            href={"/"}
+          >
+            Home
+          </a>
+        </li>
+        <li>
+          <a
+            class={styles.Menu_NavLink}
+            href={"services"}
+          >
+            Services
+          </a>
+        </li>
+        <li>
+          <a
+            class={styles.Menu_NavLink}
+            href={"how we do it"}
+          >
+            How We Do It
+          </a>
+        </li>
+        <li>
+          <a
+            class={styles.Menu_NavLink}
+            href={"platforms"}
+          >
+            Platforms
+          </a>
+        </li>
+        <li>
+          <a
+            class={styles.Menu_NavLink}
+            href={"contact"}
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </span> -->
+    </div>
+  </nav>
+</div>

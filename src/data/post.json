@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "projectId": 1,
+        "link": "/post4",
+        "title": "This is the title",
+        "year": 2023,
+        "type": "Project Type",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas obcaecati rerum enim suscipit eaque dolorum quidem impedit repudiandae architecto facilis!",
+        "image": "",
+        "location": "location",
+        "locationDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos sequi officia recusandae ea ipsa pariatur, nesciunt rerum repellendus delectus nulla blanditiis aspernatur, voluptas saepe distinctio molestias eius possimus asperiores ex. Temporibus, architecto deserunt vero explicabo suscipit aliquid non consequatur perspiciatis?",
+        "goalsList": [
+            {
+                "goalId": 1,
+                "goalTitle": "Tile",
+                "goal": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla dolorem molestiae corporis ipsum blanditiis?"
+            },
+            {
+                "goalId": 2,
+                "goalTitle": "Tile",
+                "goal": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla dolorem molestiae corporis ipsum blanditiis?"
+            },
+            {
+                "goalId": 3,
+                "goalTitle": "Tile",
+                "goal": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nulla dolorem molestiae corporis ipsum blanditiis?"
+            }
+        ],
+        "excecution": "Excecution",
+        "excecutionDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos sequi officia recusandae ea ipsa pariatur, nesciunt rerum repellendus delectus nulla blanditiis aspernatur, voluptas saepe distinctio molestias eius possimus asperiores ex. Temporibus, architecto deserunt vero explicabo suscipit aliquid non consequatur perspiciatis?",
+        "summary": "Summary",
+        "summaryDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos sequi officia recusandae ea ipsa pariatur, nesciunt rerum repellendus delectus nulla blanditiis aspernatur, voluptas saepe distinctio molestias eius possimus asperiores ex. Temporibus, architecto deserunt vero explicabo suscipit aliquid non consequatur perspiciatis?"
+    }
+]

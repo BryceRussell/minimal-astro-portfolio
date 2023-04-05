@@ -1,0 +1,15 @@
+---
+import styles from "../styles/comp-styles/footer.module.scss"
+---
+
+<footer class={styles.footer}>
+  <small>
+    <p>Copyright &copy; <span id="copyright"></span> All right reserved</p>
+  </small>
+</footer>
+
+<script>
+  document.querySelector("#copyright").textContent = new Date()
+    .getFullYear()
+    .toString();
+</script>

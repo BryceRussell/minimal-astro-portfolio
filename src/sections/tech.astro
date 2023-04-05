@@ -1,0 +1,24 @@
+---
+import "../styles/global.scss";
+import styles from "../styles/sec-styles/tech.module.scss";
+import data from "../data/tech.json";
+---
+
+<div class="Section">
+  <div class={styles.Content_Container}>
+    <div class={styles.Technolgies_Container}>
+      <div class={styles.Tech_Grid}>
+        {
+          data?.map((value) => {
+            return (
+              <div class={styles.Card}>
+                <img src={value.Icon} alt="Icon" class={styles.Icon} />
+                <p class={styles.Title}>{value.Title}</p>
+              </div>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
+</div>

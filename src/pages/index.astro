@@ -1,15 +1,19 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHead from "../components/MainHead.astro";
+
+
+// Components Import
+import Intro from "../sections/intro.astro";
+import Tech from "../sections/tech.astro";
+import PostList from "../sections/postList";
+import Work from "../sections/work.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainHead title="Rook | Home" />
+<MainLayout>
+  <Intro />
+  <Tech />
+  <!-- <PostList client:load/> -->
+  <Work />
+</MainLayout>

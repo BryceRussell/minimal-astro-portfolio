@@ -1,0 +1,61 @@
+.Header {
+  display: flex;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  padding: 5px;
+
+  height: 380px;
+  width: 100%;
+
+  .Background {
+    display: flex;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+
+    .Video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .Diffuser {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .Content_Container {
+    display: flex;
+
+    z-index: 3;
+
+    .Title {
+      color: white;
+      font-weight: 400;
+      font-size: 50px;
+
+      transition: 0.3s ease-in-out;
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .Hero {
+    .Content_Container {
+      .Title {
+        font-size: 50px;
+      }
+    }
+  }
+}

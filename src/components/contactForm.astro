@@ -1,0 +1,35 @@
+---
+import "../styles/global.scss"
+import styles from "../styles/comp-styles/contactForm.module.scss";
+---
+
+<div class={"Section"}>
+    <p class={"Title"}>Contact</p>
+    <form action="POST" class={styles.Contact_Form}>
+      <input
+        type="text"
+        name="Name"
+        placeholder="Name"
+        class={styles.Input}
+        required
+      />
+      <input
+        type="email"
+        name="Email"
+        placeholder="Email"
+        class={styles.Input}
+        required
+      />
+      <textarea
+        name="Message"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Message"
+        class={styles.Input}
+      ></textarea>
+      <div class={styles.CallToActionBox}>
+        <button class={styles.Submit_Button}>Submit</button>
+      </div>
+    </form>
+  </div>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "preview": "Image",
+        "title": "Montego Bay Yacht Club",
+        "link": "https://yachtclubmobay.vercel.app",
+        "description": "Lorem ipsum dolor. Officiis vero omnis harum deserunt corrupti inventore optio, sit quisquam?"
+    },
+    {
+        "id": 2,
+        "preview": "Image",
+        "title": "Mechanic",
+        "link": "https://www.youtube.com",
+        "description": "Lorem ipsum dolor. Officiis vero omnis harum deserunt corrupti inventore optio, sit quisquam?"
+    },
+    {
+        "id": 3,
+        "preview": "Image",
+        "title": "Boat",
+        "link": "https://www.youtube.com",
+        "description": "Lorem ipsum dolor. Officiis vero omnis harum deserunt corrupti inventore optio, sit quisquam?"
+    }
+]

@@ -1,0 +1,35 @@
+.gg-menu-right-alt {
+  box-sizing: border-box;
+  position: relative;
+  display: none;
+  color: white;
+  cursor: pointer;
+  width: 20px;
+  height: 18px;
+  transform: scale(var(--ggs, 1));
+}
+.gg-menu-right-alt::after,
+.gg-menu-right-alt::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  display: block;
+  height: 2px;
+  border-radius: 4px;
+  background: currentColor;
+}
+.gg-menu-right-alt::before {
+  width: 20px;
+  box-shadow: 0 12px 0;
+}
+.gg-menu-right-alt::after {
+  width: 15px;
+  right: 0;
+  top: 6px;
+}
+
+@media only screen and (max-width: 996px) {
+    .gg-menu-right-alt {
+        display: block;
+    }
+}

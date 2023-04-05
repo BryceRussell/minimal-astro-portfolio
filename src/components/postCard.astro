@@ -1,0 +1,20 @@
+---
+import "../styles/global.scss";
+import styles from "../styles/sec-styles/grid.module.scss";
+
+const { frontmatter, url } = Astro.props;
+const { title, description, date, category, author, image } = frontmatter;
+---
+
+<div class={styles.Content_Container}>
+  <a href={url}>
+    <div class={styles.Video_Card}>
+      <div class={styles.Image_Container}>
+        <img src={""} alt="" class={styles.Image} />
+      </div>
+
+      <p class={styles.Video_Title}>{frontmatter.title}</p>
+      <p class={styles.Description}>{""}</p>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.125rem;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+::-webkit-scrollbar {
+  width: 0.25rem;
+  border-radius: 0.125rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.125rem;
+  background-color: gray;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  /* background-color: rgb(240, 231, 219); */
+  /* background-color: #242424; */
+  background-color: #fff7ed;
+  background-color: #202023;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: none;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+
+  height: fit-content;
+  width: 100%;
+}
+
+.Page {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0px;
+  // gap: 50px;
+  overflow: hidden;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+}
+
+.Section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  overflow: hidden;
+
+  padding: 5px;
+  // gap: 20px;
+  overflow-x: none;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  height: fit-content;
+  width: 800px;
+
+  .Title {
+    font-size: 30px;
+    font-weight: 400;
+
+    display: flex;
+    align-self: flex-start;
+
+    margin-bottom: 8px;
+  }
+}
+
+.PostSection {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  overflow: hidden;
+
+  padding: 5px;
+  gap: 10px;
+  overflow-x: none;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  height: fit-content;
+  width: 800px;
+
+  .Title {
+    font-size: 30px;
+    font-weight: 400;
+
+    display: flex;
+    align-self: flex-start;
+
+    margin-bottom: 8px;
+  }
+
+  .Image_Container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    height: 400px;
+    width: 100%;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    .Image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .AuthorDate {
+    display: flex;
+    gap: 8px;
+
+    justify-content: center;
+    align-items: center;
+
+    height: fit-content;
+    width: fit-content;
+
+    .Author {
+      font-size: 20px;
+    }
+
+    .Text {
+      font-size: 16px;
+      font-weight: 300;
+    }
+  }
+
+}
+
+.Section_One {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+
+  padding: 0px;
+  gap: 0px;
+  overflow-x: none;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  height: 100%;
+  width: 800px;
+}
+
+.Section_Title_Container {
+  display: flex;
+  flex-direction: column;
+  // color: white;
+
+  padding: 0px;
+  gap: 10px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  .Question {
+    font-size: 18px;
+    font-weight: 100;
+    font-style: bold;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .Section_Title {
+    font-size: 50px;
+    font-weight: 100;
+    font-style: bold;
+    text-align: center;
+    transition: 0.3s;
+  }
+}
+
+.CallToActionBox {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+
+  gap: 10px;
+  padding: 0px;
+  margin-top: 20px;
+
+  height: fit-content;
+  width: fit-content;
+
+  .Button {
+    font-size: 16px;
+    font-weight: 400;
+
+    display: flex;
+    align-self: flex-start;
+
+    padding: 5px 20px;
+    margin-left: 0px;
+
+    transition: .3s ease-in-out;
+    cursor: pointer;
+
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .Button:is(:hover, :focus) {
+    transform: scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Section,
+  .PostSection,
+  .Section_One {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .Section {
+    height: fit-content;
+  }
+
+  .Section_Title_Container {
+    .Section_Title {
+      font-size: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .Section_Title_Container {
+    .Section_Title {
+      font-size: 25px;
+    }
+  }
+}

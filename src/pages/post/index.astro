@@ -1,0 +1,25 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import MainHead from "../../components/MainHead.astro";
+
+import styles from "../../styles/sec-styles/grid.module.scss";
+
+const allPosts = await Astro.glob("./*.md");
+
+// Component Imports:
+import PostCard from "../../components/postCard.astro";
+---
+
+<MainHead title="Rook | Posts" />
+<MainLayout>
+  <div class={"Section"}>
+    <p class={"Title"}>Posts</p>
+    <div class={styles.Content_Container}>
+    {
+      allPosts.map((post) => (
+        <PostCard frontmatter={post.frontmatter} url={post.url} />
+      ))
+    }
+    </div>
+  </div>
+</MainLayout>
