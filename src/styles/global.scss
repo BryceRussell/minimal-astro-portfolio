@@ -247,8 +247,12 @@ body {
     transition: .3s ease-in-out;
     cursor: pointer;
 
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 5px;
+    background-color: #202023;
+    backdrop-filter: blur(5px);
+
+    color: white;
   }
 
   .Button:is(:hover, :focus) {
