@@ -10,10 +10,10 @@ const allPosts = await Astro.glob("./*.md");
 import PostCard from "../../components/postCard.astro";
 ---
 
-<MainHead title="Rook | Posts" />
+<MainHead title="Rook | Logs" />
 <MainLayout>
   <div class={"Section"}>
-    <p class={"Title"}>Posts</p>
+    <p class={"Title"}>Logs</p>
     <div class={styles.Content_Container}>
     {
       allPosts.map((post) => (

@@ -23,7 +23,7 @@ const PostList = () => {
   const { scrollUp } = useScrollUp();
   return (
     <div className={"Section"}>
-      <p className={"Title"}>Posts</p>
+      <p className={"Title"}>Log</p>
       <>
         {data?.slice(0, 3).map((value) => {
           return (

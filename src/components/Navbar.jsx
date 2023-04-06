@@ -55,7 +55,7 @@ const Navbar = () => {
       <nav className={Styles.Navbar}>
         <a href={"/"} onClick={scrollUp}>
           <div className={Styles.LeftSide}>
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="white" d="M5 20h14v2H5v-2M17 2v3h-2V2h-2v3h-2V2H9v3H7V2H5v6h2v10h10V8h2V2h-2Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="red" d="M5 20h14v2H5v-2M17 2v3h-2V2h-2v3h-2V2H9v3H7V2H5v6h2v10h10V8h2V2h-2Z"/></svg>
             {/* <AnchorIcon sx={{ color: "white", fontSize: 30 }} /> */}
           </div>
         </a>
@@ -69,11 +69,11 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href={"/post/"}
+                href={"/logs/"}
                 className={Styles.Navlink}
                 onClick={scrollUp}
               >
-                Posts
+                Logs
               </a>
             </li>
             <li>
