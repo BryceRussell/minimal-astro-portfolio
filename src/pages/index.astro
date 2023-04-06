@@ -2,18 +2,25 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import MainHead from "../components/MainHead.astro";
 
-
 // Components Import
 import Intro from "../sections/intro.astro";
 import Tech from "../sections/tech.astro";
 import Tabs from "../components/tabs.astro";
 import Work from "../sections/work.astro";
+
+const headings = ["NPM", "PNPM", "YARN"];
+const url = ["https://www.youtube.com", "PNPM", "YARN"];
+const contents = [
+  "$ npm create astro@latest",
+  "$ pnpm create astro@latest",
+  "$ yarn create astro",
+];
 ---
 
 <MainHead title="Rook | Home" />
 <MainLayout>
   <Intro />
   <Tech />
-  <Tabs headings={['NPM', 'PNPM', 'YARN']} contents={['$ npm create astro@latest', '$ pnpm create astro@latest', '$ yarn create astro']} />
+  <!-- <Tabs {headings} {contents} {url} /> -->
   <Work />
 </MainLayout>

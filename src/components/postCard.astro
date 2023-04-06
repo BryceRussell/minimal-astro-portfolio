@@ -2,6 +2,7 @@
 import "../styles/global.scss";
 import styles from "../styles/sec-styles/grid.module.scss";
 
+import { Image, Picture } from "@astrojs/image/components";
 
 const { frontmatter, url } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
@@ -11,11 +12,24 @@ const { title, description, date, category, author, image } = frontmatter;
   <a href={url}>
     <div class={styles.Video_Card}>
       <div class={styles.Image_Container}>
-       
+        <Image
+          src={image.src}
+          alt={image.alt}
+          class={styles.Image}
+          width={500}
+          height={250}
+          format={"jpg"}
+          fit={"cover"}
+          quality={80}
+        />
       </div>
 
-      <p class={styles.Video_Title}>{frontmatter.title}</p>
-      <p class={styles.Description}>{""}</p>
+      <div class={styles.TitleContainer}>
+        <p class={styles.Video_Title}>{frontmatter.title}</p>
+        <p class={styles.Text}>{frontmatter.author}</p>
+      </div>
+      <p class={styles.Text}>{frontmatter.date}</p>
+      <p class={styles.Description}>{frontmatter.description}</p>
     </div>
   </a>
 </div>

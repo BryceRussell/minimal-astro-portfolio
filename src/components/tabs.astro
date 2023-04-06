@@ -1,17 +1,25 @@
 ---
 import "../styles/global.scss";
-import "../styles/import-styles/tabs.css"
-const { headings, contents, activeTextColor = "red" } = Astro.props;
+import "../styles/import-styles/tabs.css";
+const { headings, contents, url, activeTextColor = "red" } = Astro.props;
 ---
 
 <div class="Section">
-    <p class="Title">On The Web</p>
+  <p class="Title">On The Web</p>
   <div class="tabs">
     <ul class="tabs-header">
       {headings.map((heading) => <li>{heading}</li>)}
     </ul>
     <ul class="tabs-content">
-      {contents.map((content) => <li class="tab">{content}</li>)}
+      {
+        contents.map((content) => (
+          <li class="tab">
+            <a href={url} target="_blank" rel="noreferrer">
+              {content}
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </div>
 </div>

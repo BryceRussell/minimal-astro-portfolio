@@ -1,6 +1,6 @@
 ---
 layout: "../../layouts/LogLayout.astro"
-title: Running out of sample post ideas
+title: Running out of ideas
 date: 2022-11-25
 author: Victoria Greenfelder
 image: {
