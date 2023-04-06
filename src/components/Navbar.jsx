@@ -113,9 +113,9 @@ const Navbar = () => {
                 <a
                   className={Styles.Menu_NavLink}
                   onClick={menuHandler}
-                  href={"/post/"}
+                  href={"/logs/"}
                 >
-                  Posts
+                  Logs
                 </a>
               </li>
               <li>
