@@ -6,20 +6,14 @@ import MainHead from "../components/MainHead.astro";
 // Components Import
 import Intro from "../sections/intro.astro";
 import Tech from "../sections/tech.astro";
+import Tabs from "../components/tabs.astro";
 import Work from "../sections/work.astro";
 ---
 
-<!-- <MainHead title="Rook | Home" /> -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rook</title>
-</head>
+<MainHead title="Rook | Home" />
 <MainLayout>
   <Intro />
   <Tech />
+  <Tabs headings={['NPM', 'PNPM', 'YARN']} contents={['$ npm create astro@latest', '$ pnpm create astro@latest', '$ yarn create astro']} />
   <Work />
 </MainLayout>
-
-
