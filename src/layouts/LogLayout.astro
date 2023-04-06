@@ -5,6 +5,7 @@ import MainHead from "../components/MainHead.astro";
 import "../styles/global.scss";
 
 import { slugify } from "../utilities/format";
+import { Image, Picture } from "@astrojs/image/components";
 
 const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
@@ -14,14 +15,24 @@ const { title, description, date, category, author, image } = frontmatter;
 <MainLayout>
   <div class="LogSection">
     <div class={"Image_Container"}>
-      <img src={""} alt="" class={"Image"} />
+      <Image
+        src={image.src}
+        alt={image.alt}
+        class={"Image"}
+        width={500}
+        height={250}
+        format={"jpg"}
+        fit={"cover"}
+        quality={80}
+        class="Image"
+      />
     </div>
-    <h1 class="LogTitle">{frontmatter.title}</h1>
+    <h1 class="LogTitle">{title}</h1>
     <div class="AuthorDate">
-      <p class="Author">{frontmatter.author}</p>
-      <p class="Text">{frontmatter.date}</p>
+      <p class="Author">{author}</p>
+      <p class="Text">{date}</p>
     </div>
-    <p class="Text">{frontmatter.description}</p>
+    <p class="Text">{description}</p>
     ----------------------------------------------------------------
     <slot />
   </div>
