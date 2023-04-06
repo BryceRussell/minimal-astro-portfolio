@@ -6,6 +6,7 @@ import "../styles/global.scss";
 
 import { slugify } from "../utilities/format";
 import { Image, Picture } from "@astrojs/image/components";
+import BackButton from "../components/backButton"
 
 const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
@@ -14,6 +15,7 @@ const { title, description, date, category, author, image } = frontmatter;
 <MainHead title={"Rook |"} />
 <MainLayout>
   <div class="LogSection">
+    <BackButton url={'/logs/'} client:load />
     <div class={"Image_Container"}>
       <Image
         src={image.src}

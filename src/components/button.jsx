@@ -4,7 +4,7 @@ import StartIcon from "@mui/icons-material/Start";
 const button = () => {
   return (
     <div>
-      <StartIcon sx={{ color: "black", fontSize: 25 }} />
+      <StartIcon sx={{ color: "red", fontSize: 25, direction:"left" }} />
     </div>
   );
 };
