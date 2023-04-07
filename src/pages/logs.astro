@@ -1,0 +1,26 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHead from "../components/MainHead.astro";
+
+import "../styles/global.scss"
+import styles from "../styles/sec-styles/grid.module.scss";
+
+const allLogs = await Astro.glob("../markdown/logs/*.md");
+
+// Component Imports:
+import PostCard from "../components/postCard.astro";
+---
+
+<MainHead title="Rook | Logs" />
+<MainLayout>
+  <div class={"Section"}>
+    <p class={"Title"}>Logs</p>
+    <div class={styles.Content_Container}>
+    {
+      allLogs.map((log) => (
+        <PostCard frontmatter={log.frontmatter} url={`${log.frontmatter.slug}`} />
+      ))
+    }
+    </div>
+  </div>
+</MainLayout>

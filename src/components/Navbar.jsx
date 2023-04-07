@@ -69,7 +69,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href={"/logs/"}
+                href={"/logs"}
                 className={Styles.Navlink}
                 onClick={scrollUp}
               >
@@ -113,7 +113,7 @@ const Navbar = () => {
                 <a
                   className={Styles.Menu_NavLink}
                   onClick={menuHandler}
-                  href={"/logs/"}
+                  href={"/logs"}
                 >
                   Logs
                 </a>

@@ -5,7 +5,7 @@ import styles from "../styles/sec-styles/grid.module.scss";
 import { Image, Picture } from "@astrojs/image/components";
 
 const { frontmatter, url } = Astro.props;
-const { title, description, date, category, author, image } = frontmatter;
+const { title, description, date, category, author, image, slug } = frontmatter;
 ---
 
 <div class={styles.Content_Container}>
@@ -28,7 +28,7 @@ const { title, description, date, category, author, image } = frontmatter;
         <p class={styles.Video_Title}>{frontmatter.title}</p>
         <p class={styles.Text}>{frontmatter.author}</p>
       </div>
-      <p class={styles.Text}>{frontmatter.date}</p>
+      <p class={styles.Text}>{new Date(date).toLocaleDateString()}</p>
       <p class={styles.Description}>{frontmatter.description}</p>
     </div>
   </a>

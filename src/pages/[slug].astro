@@ -1,0 +1,29 @@
+---
+export const prerender = true;
+
+//Layout Imports:
+import MainLayout from "../layouts/MainLayout.astro";
+import MainHead from "../components/MainHead.astro";
+
+// Style Imports:
+import "../styles/global.scss";
+
+export async function getStaticPaths() {
+  const logs = await Astro.glob("../markdown/logs/*.md");
+  console.log(logs)
+
+  return logs.map((log) => ({
+    params: {
+      slug: log.frontmatter.slug,
+    },
+    props: {
+      log,
+    },
+  }));
+}
+
+const {Content, frontmatter} = Astro.props.log
+---
+
+<MainHead title={frontmatter.title} />
+<Content />
